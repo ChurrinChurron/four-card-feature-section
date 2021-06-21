@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: hsl(0, 0%, 98%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.principal {
+
+    margin: 5rem 1.6rem;
+}
+
+.principal-pres {
+
+    text-align: center;
+}
+
+.principal-pres h2 {
+
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.principal-pres h2 span {
+
+    font-weight: 600;
+}
+
+.principal-pres h4 {
+
+    font-weight: 400;
+    color: hsl(0, 0%, 65%);
+    margin-top: 6%;
+}
+
+.principal-opci {
+
+    margin-top: 30%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 50px 0;
+}
+
+.principal-opci-hab {
+
+    box-shadow: 0 8px 10px 5px #dedede;
+    width: 95%;
+    padding: 30px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 14.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.principal-opci-hab:nth-child(1) {
+
+    border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+.principal-opci-hab:nth-child(2) {
+
+    border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.principal-opci-hab:nth-child(3) {
+
+    border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.principal-opci-hab:nth-child(4) {
+
+    border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+.principal-opci-hab h3 {
+
+    color: #5c5c5c;
+    position: relative;
+    bottom: 10px;
+    font-size: 22px;
+}
+
+.principal-opci-hab h5 {
+
+    color: #a6a6a6;
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.principal-opci-hab img {
+
+    align-self: flex-end;
+    position: relative;
+    top: 25px;
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+    .principal-pres {
+
+        margin: 0 18%;
+    }
+
+
+    .principal-opci {
+
+        margin-top: 8%;
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: 250px 10px 250px;
+        grid-gap: 5px;
+        place-items: center;
+    }
+
+
+
+    .principal-opci-hab:nth-child(1){
+
+        order: 1;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .principal-opci-hab:nth-child(2) {
+
+        order: 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .principal-opci-hab:nth-child(3) {
+
+        order: 3;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    } 
+
+    .principal-opci-hab:nth-child(4) {
+
+        order: 4;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    
+} 
